@@ -944,3 +944,1499 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 90ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 4012)
 
 
+Started GET "/" for 127.0.0.1 at 2022-04-24 23:21:29 +0530
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: visitor_recognition.
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-04-24 23:21:30 +0530
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: visitor_recognition.
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-04-24 23:22:56 +0530
+  
+ActiveRecord::NoDatabaseError (We could not find your database: visitor_recognition_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-04-24 23:22:56 +0530
+  
+ActiveRecord::NoDatabaseError (We could not find your database: visitor_recognition_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (257.0ms)[0m  [1m[35mCREATE DATABASE "visitor_recognition_development" ENCODING = 'unicode'[0m
+Started GET "/" for 127.0.0.1 at 2022-04-24 23:25:11 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/karthiga/.rvm/gems/ruby-3.1.2/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/karthiga/.rvm/gems/ruby-3.1.2/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.6ms | Allocations: 527)
+Completed 200 OK in 10ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 4016)
+
+
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "visitor_recognition_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "visitor_recognition_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "visitor_recognition_development" ENCODING = 'unicode'[0m
+  [1m[35m (243.4ms)[0m  [1m[35mCREATE DATABASE "visitor_recognition_test" ENCODING = 'unicode'[0m
+Started GET "/" for 127.0.0.1 at 2022-04-25 21:32:42 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/karthiga/.rvm/gems/ruby-3.1.2/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/karthiga/.rvm/gems/ruby-3.1.2/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.5ms | Allocations: 527)
+Completed 200 OK in 15ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 3584)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-25 21:32:45 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/karthiga/.rvm/gems/ruby-3.1.2/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/karthiga/.rvm/gems/ruby-3.1.2/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.0ms | Allocations: 319)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 1042)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 06:42:45 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/karthiga/.rvm/gems/ruby-3.1.2/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/karthiga/.rvm/gems/ruby-3.1.2/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.8ms | Allocations: 527)
+Completed 200 OK in 13ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 3584)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 06:48:13 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 334)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 4682)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 7857)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap' with type 'text/css'
+Checked in these paths: 
+  /home/karthiga/visitor_recognition/app/assets/config
+  /home/karthiga/visitor_recognition/app/assets/stylesheets
+  /home/karthiga/.rvm/gems/ruby-3.1.2/gems/stimulus-rails-1.0.4/app/assets/javascripts
+  /home/karthiga/.rvm/gems/ruby-3.1.2/gems/turbo-rails-1.0.1/app/assets/javascripts
+  /home/karthiga/.rvm/gems/ruby-3.1.2/gems/importmap-rails-1.0.3/app/assets/javascripts
+  /home/karthiga/.rvm/gems/ruby-3.1.2/gems/actiontext-7.0.2.3/app/assets/javascripts
+  /home/karthiga/.rvm/gems/ruby-3.1.2/gems/actiontext-7.0.2.3/app/assets/stylesheets
+  /home/karthiga/.rvm/gems/ruby-3.1.2/gems/actioncable-7.0.2.3/app/assets/javascripts
+  /home/karthiga/.rvm/gems/ruby-3.1.2/gems/activestorage-7.0.2.3/app/assets/javascripts
+  /home/karthiga/.rvm/gems/ruby-3.1.2/gems/actionview-7.0.2.3/lib/assets/compiled
+  /home/karthiga/visitor_recognition/app/javascript
+  /home/karthiga/visitor_recognition/vendor/javascript):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:9
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-04-27 06:48:14 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-27 06:54:03 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 341)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 4604)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 7779)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap' with type 'text/css'
+Checked in these paths: 
+  /home/karthiga/visitor_recognition/app/assets/config
+  /home/karthiga/visitor_recognition/app/assets/stylesheets
+  /home/karthiga/.rvm/gems/ruby-3.1.2/gems/stimulus-rails-1.0.4/app/assets/javascripts
+  /home/karthiga/.rvm/gems/ruby-3.1.2/gems/turbo-rails-1.0.1/app/assets/javascripts
+  /home/karthiga/.rvm/gems/ruby-3.1.2/gems/importmap-rails-1.0.3/app/assets/javascripts
+  /home/karthiga/.rvm/gems/ruby-3.1.2/gems/actiontext-7.0.2.3/app/assets/javascripts
+  /home/karthiga/.rvm/gems/ruby-3.1.2/gems/actiontext-7.0.2.3/app/assets/stylesheets
+  /home/karthiga/.rvm/gems/ruby-3.1.2/gems/actioncable-7.0.2.3/app/assets/javascripts
+  /home/karthiga/.rvm/gems/ruby-3.1.2/gems/activestorage-7.0.2.3/app/assets/javascripts
+  /home/karthiga/.rvm/gems/ruby-3.1.2/gems/actionview-7.0.2.3/lib/assets/compiled
+  /home/karthiga/visitor_recognition/app/javascript
+  /home/karthiga/visitor_recognition/vendor/javascript):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2022-04-27 07:05:56 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 334)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 5948)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms | Allocations: 9101)
+
+
+  
+LoadError (cannot load such file -- sassc):
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2022-04-27 07:08:08 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 334)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 5191)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 8344)
+
+
+  
+LoadError (cannot load such file -- sassc):
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2022-04-27 07:13:59 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 334)
+Started GET "/" for 127.0.0.1 at 2022-04-27 07:14:18 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 334)
+Started GET "/" for 127.0.0.1 at 2022-04-27 07:16:50 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 334)
+Started GET "/" for 127.0.0.1 at 2022-04-27 07:17:50 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 334)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 5190)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 8343)
+
+
+  
+LoadError (cannot load such file -- sassc):
+  
+app/views/layouts/application.html.erb:9
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-04-27 07:17:50 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-27 07:20:14 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 334)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 4873)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 8047)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap/dist/css/bootstrap.
+        on line 1:1 of app/assets/stylesheets/main.css.scss
+>> @import 'bootstrap/dist/css/bootstrap';
+
+   ^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/main.css.scss:1
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2022-04-27 07:20:18 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3125)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 3410)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap/dist/css/bootstrap.
+        on line 1:1 of app/assets/stylesheets/main.css.scss
+>> @import 'bootstrap/dist/css/bootstrap';
+
+   ^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/main.css.scss:1
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:26:16 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 334)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 4873)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms | Allocations: 8047)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap/dist/css/bootstrap.
+        on line 1:1 of app/assets/stylesheets/main.css.scss
+>> @import 'bootstrap/dist/css/bootstrap';
+
+   ^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/main.css.scss:1
+app/views/layouts/application.html.erb:9
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-04-27 09:26:17 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:39:32 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 334)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 4873)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms | Allocations: 8047)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap/dist/css/bootstrap.
+        on line 1:1 of app/assets/stylesheets/main.css.scss
+>> @import 'bootstrap/dist/css/bootstrap';
+
+   ^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/main.css.scss:1
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:40:58 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 9373)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms | Allocations: 10002)
+
+
+  
+ActionView::Template::Error (link_tree argument must be a directory):
+  
+app/assets/config/manifest.js:1
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:40:59 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 4991)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 6761)
+
+
+  
+ActionView::Template::Error (link_tree argument must be a directory):
+  
+app/assets/config/manifest.js:1
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:40:59 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 10859)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 11104)
+
+
+  
+ActionView::Template::Error (link_tree argument must be a directory):
+  
+app/assets/config/manifest.js:1
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:41:00 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 5857)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 6962)
+
+
+  
+ActionView::Template::Error (link_tree argument must be a directory):
+  
+app/assets/config/manifest.js:1
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:44:37 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 42.9ms | Allocations: 11714)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms | Allocations: 11955)
+
+
+  
+ActionView::Template::Error (link_tree argument must be a directory):
+  
+app/assets/config/manifest.js:4
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:48:40 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 62.3ms | Allocations: 35799)
+Completed 200 OK in 64ms (Views: 63.0ms | Allocations: 36116)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:50:10 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2711)
+Completed 200 OK in 15ms (Views: 12.9ms | Allocations: 3528)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:50:21 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 159)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2676)
+Completed 200 OK in 12ms (Views: 10.4ms | Allocations: 3512)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:50:23 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2078)
+Completed 200 OK in 7ms (Views: 6.3ms | Allocations: 2366)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:50:23 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2092)
+Completed 200 OK in 7ms (Views: 6.2ms | Allocations: 2356)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:50:24 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2085)
+Completed 200 OK in 13ms (Views: 11.4ms | Allocations: 2349)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:51:40 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 2682)
+Completed 200 OK in 19ms (Views: 16.9ms | Allocations: 3500)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:51:40 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2076)
+Completed 200 OK in 10ms (Views: 8.6ms | Allocations: 2358)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:51:41 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 2085)
+Completed 200 OK in 15ms (Views: 13.5ms | Allocations: 2349)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:51:41 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 2064)
+Completed 200 OK in 12ms (Views: 11.5ms | Allocations: 2328)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:51:41 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2073)
+Completed 200 OK in 5ms (Views: 4.4ms | Allocations: 2337)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:51:41 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 2082)
+Completed 200 OK in 7ms (Views: 6.1ms | Allocations: 2346)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:51:41 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2082)
+Completed 200 OK in 12ms (Views: 11.3ms | Allocations: 2346)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:51:42 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 2091)
+Completed 200 OK in 15ms (Views: 13.6ms | Allocations: 2355)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:51:42 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2088)
+Completed 200 OK in 12ms (Views: 10.8ms | Allocations: 2352)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:51:42 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2079)
+Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 2343)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:51:42 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 2097)
+Completed 200 OK in 12ms (Views: 10.7ms | Allocations: 2361)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:54:09 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 174)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 2706)
+Completed 200 OK in 18ms (Views: 16.2ms | Allocations: 3524)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:54:10 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2103)
+Completed 200 OK in 7ms (Views: 6.3ms | Allocations: 2385)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:54:10 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 2081)
+Completed 200 OK in 11ms (Views: 10.5ms | Allocations: 2345)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:54:44 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 175)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 2710)
+Completed 200 OK in 18ms (Views: 15.9ms | Allocations: 3532)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:54:45 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2088)
+Completed 200 OK in 6ms (Views: 5.1ms | Allocations: 2370)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:54:45 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 2078)
+Completed 200 OK in 15ms (Views: 14.3ms | Allocations: 2343)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:54:45 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 2085)
+Completed 200 OK in 9ms (Views: 7.9ms | Allocations: 2349)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:54:45 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2073)
+Completed 200 OK in 8ms (Views: 7.3ms | Allocations: 2337)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:57:10 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2083)
+Completed 200 OK in 9ms (Views: 8.3ms | Allocations: 2347)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:57:10 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2086)
+Completed 200 OK in 9ms (Views: 8.5ms | Allocations: 2350)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:57:10 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2070)
+Completed 200 OK in 6ms (Views: 6.0ms | Allocations: 2334)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:57:10 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 2085)
+Completed 200 OK in 13ms (Views: 11.9ms | Allocations: 2349)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:57:39 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 2073)
+Completed 200 OK in 9ms (Views: 7.7ms | Allocations: 2337)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:57:39 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2097)
+Completed 200 OK in 13ms (Views: 11.8ms | Allocations: 2362)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:57:39 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 2085)
+Completed 200 OK in 12ms (Views: 10.9ms | Allocations: 2349)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:59:27 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 13699)
+Completed 200 OK in 23ms (Views: 22.5ms | Allocations: 13967)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:59:28 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2076)
+Completed 200 OK in 6ms (Views: 5.4ms | Allocations: 2340)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:59:28 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2094)
+Completed 200 OK in 11ms (Views: 10.3ms | Allocations: 2358)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:59:48 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 14784)
+Completed 200 OK in 31ms (Views: 30.5ms | Allocations: 15052)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:59:49 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2091)
+Completed 200 OK in 7ms (Views: 5.8ms | Allocations: 2355)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 09:59:49 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2097)
+Completed 200 OK in 8ms (Views: 7.1ms | Allocations: 2361)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:13:03 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 16132)
+Completed 200 OK in 33ms (Views: 32.2ms | Allocations: 16400)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:13:04 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2084)
+Completed 200 OK in 6ms (Views: 5.8ms | Allocations: 2349)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:13:04 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2082)
+Completed 200 OK in 9ms (Views: 7.9ms | Allocations: 2346)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:13:04 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 2091)
+Completed 200 OK in 13ms (Views: 11.3ms | Allocations: 2355)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:13:05 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2073)
+Completed 200 OK in 12ms (Views: 10.8ms | Allocations: 2337)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:13:05 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2087)
+Completed 200 OK in 8ms (Views: 6.8ms | Allocations: 2351)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:13:05 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 2097)
+Completed 200 OK in 12ms (Views: 11.4ms | Allocations: 2361)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:13:05 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2079)
+Completed 200 OK in 10ms (Views: 9.4ms | Allocations: 2343)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-04-27 11:22:18 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:29:00 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 6608)
+Completed 500 Internal Server Error in 27ms (Allocations: 7413)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `javascript_controllers_tags' for #<ActionView::Base:0x0000000000d2c8>
+
+    '.freeze;@output_buffer.append=( javascript_controllers_tags );@output_buffer.safe_append='
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Did you mean?  javascript_tag):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_controllers_tags %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:29:02 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 36.5ms | Allocations: 5922)
+Completed 500 Internal Server Error in 38ms (Allocations: 6179)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `javascript_controllers_tags' for #<ActionView::Base:0x0000000000d598>
+
+    '.freeze;@output_buffer.append=( javascript_controllers_tags );@output_buffer.safe_append='
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Did you mean?  javascript_tag):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_controllers_tags %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:29:03 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 5922)
+Completed 500 Internal Server Error in 34ms (Allocations: 6161)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `javascript_controllers_tags' for #<ActionView::Base:0x0000000000d868>
+
+    '.freeze;@output_buffer.append=( javascript_controllers_tags );@output_buffer.safe_append='
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Did you mean?  javascript_tag):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_controllers_tags %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:31:00 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 6454)
+Completed 500 Internal Server Error in 24ms (Allocations: 7237)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `javascript_tags' for #<ActionView::Base:0x0000000000dbd8>
+
+    '.freeze;@output_buffer.append=( javascript_tags );@output_buffer.safe_append='
+                                     ^^^^^^^^^^^^^^^
+Did you mean?  javascript_tag
+               javascript_path
+               javascript_url):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_tags %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:31:23 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2598)
+Completed 200 OK in 12ms (Views: 11.0ms | Allocations: 3428)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:31:24 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2109)
+Completed 200 OK in 9ms (Views: 7.9ms | Allocations: 2391)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:31:24 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2100)
+Completed 200 OK in 8ms (Views: 6.9ms | Allocations: 2364)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:32:34 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 13764)
+Completed 200 OK in 24ms (Views: 23.2ms | Allocations: 14032)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:32:35 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2073)
+Completed 200 OK in 12ms (Views: 10.5ms | Allocations: 2337)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:32:35 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2091)
+Completed 200 OK in 5ms (Views: 4.8ms | Allocations: 2355)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:32:35 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 2082)
+Completed 200 OK in 13ms (Views: 12.0ms | Allocations: 2346)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:35:33 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 12697)
+Completed 200 OK in 13ms (Views: 12.9ms | Allocations: 13333)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:35:33 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2070)
+Completed 200 OK in 9ms (Views: 8.1ms | Allocations: 2351)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:35:33 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2100)
+Completed 200 OK in 12ms (Views: 11.0ms | Allocations: 2364)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:35:34 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2079)
+Completed 200 OK in 6ms (Views: 5.0ms | Allocations: 2344)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:35:34 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 2076)
+Completed 200 OK in 12ms (Views: 11.3ms | Allocations: 2340)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:35:34 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2096)
+Completed 200 OK in 6ms (Views: 5.0ms | Allocations: 2360)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:35:34 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2094)
+Completed 200 OK in 6ms (Views: 5.0ms | Allocations: 2358)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:39:49 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1642)
+Completed 200 OK in 4ms (Views: 3.5ms | Allocations: 2602)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:39:50 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1037)
+Completed 200 OK in 5ms (Views: 4.2ms | Allocations: 1318)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:39:50 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 1049)
+Completed 200 OK in 16ms (Views: 15.3ms | Allocations: 1314)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:39:50 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 1049)
+Completed 200 OK in 8ms (Views: 7.0ms | Allocations: 1313)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:39:50 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 1046)
+Completed 200 OK in 6ms (Views: 4.9ms | Allocations: 1310)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 11:39:50 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 1043)
+Completed 200 OK in 7ms (Views: 6.5ms | Allocations: 1307)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:05:42 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 361)
+  Rendered layout layouts/application.html.erb (Duration: 6488.5ms | Allocations: 128786)
+Completed 200 OK in 6494ms (Views: 6490.4ms | ActiveRecord: 0.0ms | Allocations: 132010)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-04-27 12:05:49 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:07:30 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 145)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 5999)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.0ms | Allocations: 6854)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:07:31 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 5409)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 5697)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:07:31 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 5376)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 5643)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:07:48 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 176)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 6015)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 6845)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:11:54 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 155)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 5990)
+Completed 200 OK in 15ms (Views: 13.5ms | Allocations: 6826)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:12:25 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 6006)
+Completed 200 OK in 12ms (Views: 11.7ms | Allocations: 6842)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:13:32 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 175)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 6020)
+Completed 200 OK in 14ms (Views: 13.0ms | Allocations: 6866)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:13:33 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 5413)
+Completed 200 OK in 21ms (Views: 20.4ms | Allocations: 5704)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:13:34 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 5400)
+Completed 200 OK in 20ms (Views: 18.8ms | Allocations: 5667)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:13:34 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 5392)
+Completed 200 OK in 17ms (Views: 16.3ms | Allocations: 5659)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:13:34 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 5398)
+Completed 200 OK in 8ms (Views: 7.2ms | Allocations: 5665)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:13:35 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 5392)
+Completed 200 OK in 10ms (Views: 9.8ms | Allocations: 5659)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:14:11 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 155)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 5990)
+Completed 200 OK in 12ms (Views: 11.1ms | Allocations: 6808)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:14:29 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 5998)
+Completed 200 OK in 26ms (Views: 24.5ms | Allocations: 6835)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:20:07 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 158)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 5999)
+Completed 200 OK in 15ms (Views: 14.0ms | Allocations: 6836)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:22:25 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 155)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 5990)
+Completed 200 OK in 12ms (Views: 10.7ms | Allocations: 6826)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:25:30 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 155)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 5981)
+Completed 200 OK in 27ms (Views: 25.6ms | Allocations: 6817)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:27:12 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 5986)
+Completed 200 OK in 18ms (Views: 15.6ms | Allocations: 6822)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:27:53 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 159)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 5991)
+Completed 200 OK in 12ms (Views: 10.9ms | Allocations: 6827)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:28:24 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 153)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 6004)
+Completed 200 OK in 8ms (Views: 7.9ms | Allocations: 6844)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 12:29:04 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 6003)
+Completed 200 OK in 13ms (Views: 11.5ms | Allocations: 6839)
+
+
