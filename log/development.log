@@ -2440,3 +2440,43 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 13ms (Views: 11.5ms | Allocations: 6839)
 
 
+Started GET "/" for 127.0.0.1 at 2022-04-27 16:14:16 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 341)
+  Rendered layout layouts/application.html.erb (Duration: 79.3ms | Allocations: 43745)
+Completed 200 OK in 88ms (Views: 82.6ms | ActiveRecord: 0.0ms | Allocations: 46969)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-04-27 16:14:16 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-27 16:14:17 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 5685)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 6001)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 16:15:06 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 144)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 6010)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 6839)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 16:15:39 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 6028)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 6884)
+
+
