@@ -2480,3 +2480,247 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 6884)
 
 
+Started GET "/" for 127.0.0.1 at 2022-04-27 21:34:37 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 360)
+  Rendered layout layouts/application.html.erb (Duration: 102.7ms | Allocations: 43852)
+Completed 200 OK in 112ms (Views: 105.5ms | ActiveRecord: 0.0ms | Allocations: 47076)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-04-27 21:34:38 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 127.0.0.1 at 2022-04-27 21:34:41 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 5658)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 5973)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 21:45:54 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 360)
+  Rendered layout layouts/application.html.erb (Duration: 55.7ms | Allocations: 43498)
+Completed 200 OK in 62ms (Views: 57.9ms | ActiveRecord: 0.0ms | Allocations: 46722)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 21:45:57 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 5576)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 5910)
+
+
+  [1m[35m (33.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (10.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4908880623739240575)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20220428084502)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp(6), "remember_created_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220428084502"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-04-28 08:45:15.186419"], ["updated_at", "2022-04-28 08:45:15.186419"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4908880623739240575)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-04-28 14:16:02 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 358)
+  Rendered layout layouts/application.html.erb (Duration: 80.0ms | Allocations: 43861)
+Completed 200 OK in 89ms (Views: 82.9ms | ActiveRecord: 0.0ms | Allocations: 47114)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-04-28 14:16:02 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-04-28 14:16:20 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.8ms | Allocations: 713)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 22.2ms | Allocations: 7256)
+  Rendered layout layouts/application.html.erb (Duration: 34.6ms | Allocations: 12778)
+Completed 200 OK in 56ms (Views: 36.7ms | ActiveRecord: 4.8ms | Allocations: 19871)
+
+
+Started GET "//users/password/new" for 127.0.0.1 at 2022-04-28 14:17:39 +0530
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 231)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 190)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1530)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 7059)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 8294)
+
+
+Started POST "/users/password" for 127.0.0.1 at 2022-04-28 14:17:40 +0530
+Processing by Devise::PasswordsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>""}, "commit"=>"Send me reset password instructions"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.8ms | Allocations: 619)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 118)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1871)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 7212)
+Completed 200 OK in 17ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 9108)
+
+
+Started POST "/users/password" for 127.0.0.1 at 2022-04-28 14:17:40 +0530
+Processing by Devise::PasswordsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>""}, "commit"=>"Send me reset password instructions"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 465)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 117)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1638)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 6864)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 8127)
+
+
+Started POST "/users/password" for 127.0.0.1 at 2022-04-28 14:17:40 +0530
+Processing by Devise::PasswordsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>""}, "commit"=>"Send me reset password instructions"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 465)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 117)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1638)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 6864)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 8072)
+
+
+Started POST "/users/password" for 127.0.0.1 at 2022-04-28 14:17:40 +0530
+Processing by Devise::PasswordsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>""}, "commit"=>"Send me reset password instructions"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 465)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 117)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1638)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 6864)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.0ms | Allocations: 8069)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2022-04-28 14:17:59 +0530
+Processing by Devise::RegistrationsController#edit as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 471)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-04-28 14:17:59 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 122)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1024)
+  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 6362)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.0ms | Allocations: 7071)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2022-04-28 14:18:08 +0530
+Processing by Devise::RegistrationsController#edit as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 259)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-04-28 14:18:08 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 120)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 964)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 6194)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 6841)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-04-28 14:18:09 +0530
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 404)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-04-28 14:18:27 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1688)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 7121)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 8178)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-04-28 14:18:28 +0530
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.5ms | Allocations: 877)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 76)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2942)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 8187)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 10446)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-04-28 14:18:38 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 76)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 997)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 6308)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 6870)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2022-04-28 14:18:58 +0530
+Processing by Devise::RegistrationsController#edit as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-04-28 14:18:58 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 120)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 968)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 6197)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 6817)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-28 14:21:19 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 5417)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 5688)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-04-28 14:21:29 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 120)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 964)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 6190)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 6801)
+
+
