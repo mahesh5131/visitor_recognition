@@ -1,0 +1,2 @@
+class VisitorTable < ApplicationRecord
+end

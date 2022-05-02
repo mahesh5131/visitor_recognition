@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Visitor tables</h1>
+
+<div id="visitor_tables">
+  <% @visitor_tables.each do |visitor_table| %>
+    <%= render visitor_table %>
+    <p>
+      <%= link_to "Show this visitor table", visitor_table %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New visitor table", new_visitor_table_path %>
