@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  relation: MyString
+  classification: MyString
+  no_of_visit: 1
+  last_visited: 2022-05-08 16:39:24
+  notes: MyText
+
+two:
+  name: MyString
+  relation: MyString
+  classification: MyString
+  no_of_visit: 1
+  last_visited: 2022-05-08 16:39:24
+  notes: MyText
