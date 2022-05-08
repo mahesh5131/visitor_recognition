@@ -25,6 +25,8 @@ class VisitorTablesController < ApplicationController
 
     respond_to do |format|
       if @visitor_table.save
+        #send mail
+        UserMailer.visitor_information(@visitor_table).deliver
         format.html { redirect_to visitor_table_url(@visitor_table), notice: "Visitor table was successfully created." }
         format.json { render :show, status: :created, location: @visitor_table }
       else

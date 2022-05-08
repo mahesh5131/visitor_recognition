@@ -3900,3 +3900,659 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 46ms (Views: 44.2ms | Allocations: 8344)
 
 
+Started GET "/" for ::1 at 2022-05-06 21:35:29 +0530
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: postgres.
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2022-05-06 21:35:30 +0530
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: postgres.
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[36mActiveRecord::SchemaMigration Pluck (177.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (45.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35mSQL (99.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (805.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (407.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp(6), "remember_created_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (108.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (76.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (43.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "visitor_tables" CASCADE[0m
+  [1m[35m (86.8ms)[0m  [1m[35mCREATE TABLE "visitor_tables" ("id" bigserial primary key, "name" character varying, "relation" character varying, "classification" character varying, "no_of_visits" integer, "last_visited" timestamp(6), "notes" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35mSQL (178.9ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (876.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (563.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp(6), "remember_created_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (119.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (121.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (43.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "visitor_tables" CASCADE[0m
+  [1m[35m (253.1ms)[0m  [1m[35mCREATE TABLE "visitor_tables" ("id" bigserial primary key, "name" character varying, "relation" character varying, "classification" character varying, "no_of_visits" integer, "last_visited" timestamp(6), "notes" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (99.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (24.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (18.8ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "development"], ["updated_at", "2022-05-06 16:10:28.238728"], ["key", "environment"]]
+  [1m[36mTRANSACTION (35.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.6ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2022-05-06 16:10:28.303487"], ["key", "environment"]]
+  [1m[36mTRANSACTION (45.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-05-06 21:41:32 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 418)
+  Rendered layouts/_navbar.html.erb (Duration: 21.1ms | Allocations: 1121)
+  Rendered layouts/_footer.html.erb (Duration: 14.9ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 18548.9ms | Allocations: 83954)
+Completed 200 OK in 18578ms (Views: 18561.9ms | ActiveRecord: 0.0ms | Allocations: 87227)
+
+
+Started GET "/favicon.ico" for ::1 at 2022-05-06 21:41:57 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-05-06 21:42:55 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 6.8ms | Allocations: 266)
+  Rendered devise/shared/_links.html.erb (Duration: 14.1ms | Allocations: 617)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 371.8ms | Allocations: 7324)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 588)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 16)
+  Rendered layout layouts/application.html.erb (Duration: 390.0ms | Allocations: 13512)
+Completed 200 OK in 488ms (Views: 392.9ms | ActiveRecord: 53.9ms | Allocations: 20038)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-05-06 21:43:03 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 271)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 46.6ms | Allocations: 2192)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 588)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 16)
+  Rendered layout layouts/application.html.erb (Duration: 72.2ms | Allocations: 8362)
+Completed 200 OK in 162ms (Views: 76.3ms | ActiveRecord: 0.0ms | Allocations: 10124)
+
+
+  [1m[36mUser Load (68.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mVisitorTable Load (32.4ms)[0m  [1m[34mSELECT "visitor_tables".* FROM "visitor_tables"[0m
+Started GET "/" for ::1 at 2022-05-07 20:47:12 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (48.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 10.9ms | Allocations: 418)
+  Rendered layouts/_navbar.html.erb (Duration: 18.4ms | Allocations: 1132)
+  Rendered layouts/_footer.html.erb (Duration: 12.4ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 790.1ms | Allocations: 45965)
+Completed 200 OK in 833ms (Views: 819.2ms | ActiveRecord: 0.0ms | Allocations: 49239)
+
+
+Started GET "/favicon.ico" for ::1 at 2022-05-07 20:47:15 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-05-07 20:47:25 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 16.7ms | Allocations: 266)
+  Rendered devise/shared/_links.html.erb (Duration: 2.3ms | Allocations: 617)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 115.0ms | Allocations: 4798)
+  Rendered layouts/_navbar.html.erb (Duration: 2.7ms | Allocations: 591)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 16)
+  Rendered layout layouts/application.html.erb (Duration: 140.6ms | Allocations: 11078)
+Completed 200 OK in 335ms (Views: 143.8ms | ActiveRecord: 150.3ms | Allocations: 17609)
+
+
+Started POST "/users" for ::1 at 2022-05-07 20:47:44 +0530
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"maheshmadesh141@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "maheshmadesh141@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 2.9ms | Allocations: 621)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 77)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.1ms | Allocations: 2236)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 593)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 36.5ms | Allocations: 8422)
+Completed 200 OK in 658ms (Views: 37.8ms | ActiveRecord: 3.0ms | Allocations: 17060)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-05-07 20:48:36 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 271)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 32.3ms | Allocations: 1996)
+  Rendered layouts/_navbar.html.erb (Duration: 5.1ms | Allocations: 590)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 16)
+  Rendered layout layouts/application.html.erb (Duration: 58.2ms | Allocations: 8166)
+Completed 200 OK in 65ms (Views: 61.3ms | ActiveRecord: 0.0ms | Allocations: 9525)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-05-07 20:48:48 +0530
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"maheshmadesh141@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "maheshmadesh141@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 31ms (ActiveRecord: 1.3ms | Allocations: 2233)
+
+
+Started GET "/visitor_tables" for ::1 at 2022-05-08 10:20:11 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (64.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VisitorTablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering visitor_tables/index.html.erb within layouts/application
+  [1m[36mVisitorTable Load (56.7ms)[0m  [1m[34mSELECT "visitor_tables".* FROM "visitor_tables"[0m
+  ↳ app/views/visitor_tables/index.html.erb:6
+  Rendered visitor_tables/index.html.erb within layouts/application (Duration: 81.0ms | Allocations: 1686)
+  Rendered layouts/_navbar.html.erb (Duration: 23.5ms | Allocations: 1040)
+  Rendered layouts/_footer.html.erb (Duration: 5.1ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 703.2ms | Allocations: 46445)
+Completed 200 OK in 735ms (Views: 664.2ms | ActiveRecord: 56.7ms | Allocations: 50270)
+
+
+Started GET "/favicon.ico" for ::1 at 2022-05-08 10:20:15 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/visitor_tables/new" for ::1 at 2022-05-08 10:20:18 +0530
+Processing by VisitorTablesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering visitor_tables/new.html.erb within layouts/application
+  Rendered visitor_tables/_form.html.erb (Duration: 85.8ms | Allocations: 4826)
+  Rendered visitor_tables/new.html.erb within layouts/application (Duration: 90.7ms | Allocations: 5180)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 597)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 109.6ms | Allocations: 11401)
+Completed 200 OK in 249ms (Views: 110.8ms | ActiveRecord: 83.3ms | Allocations: 17290)
+
+
+Started POST "/visitor_tables" for ::1 at 2022-05-08 10:21:27 +0530
+Processing by VisitorTablesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "visitor_table"=>{"name"=>"karthiga", "relation"=>"friend", "classification"=>"stranger", "no_of_visits"=>"1", "last_visited"=>"2022-05-08T10:21", "notes"=>"abcd"}, "commit"=>"Create Visitor table"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/visitor_tables_controller.rb:27:in `block in create'
+  [1m[36mVisitorTable Create (156.3ms)[0m  [1m[32mINSERT INTO "visitor_tables" ("name", "relation", "classification", "no_of_visits", "last_visited", "notes", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "karthiga"], ["relation", "friend"], ["classification", "stranger"], ["no_of_visits", 1], ["last_visited", "2022-05-08 10:21:00"], ["notes", "abcd"], ["created_at", "2022-05-08 04:51:27.257059"], ["updated_at", "2022-05-08 04:51:27.257059"]]
+  ↳ app/controllers/visitor_tables_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (55.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/visitor_tables_controller.rb:27:in `block in create'
+UserMailer#visitor_information: processed outbound mail in 6.6ms
+Completed 500 Internal Server Error in 660ms (ActiveRecord: 212.5ms | Allocations: 18919)
+
+
+  
+NameError (undefined local variable or method `user' for #<UserMailer:0x0000000000e240>
+
+    mail to: user.email, subject: "Visitor information"
+             ^^^^
+Did you mean?  super):
+  
+app/mailers/user_mailer.rb:10:in `visitor_information'
+app/controllers/visitor_tables_controller.rb:29:in `block in create'
+app/controllers/visitor_tables_controller.rb:26:in `create'
+Started GET "/visitor_tables/new" for ::1 at 2022-05-08 10:27:45 +0530
+Processing by VisitorTablesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering visitor_tables/new.html.erb within layouts/application
+  Rendered visitor_tables/_form.html.erb (Duration: 115.5ms | Allocations: 1931)
+  Rendered visitor_tables/new.html.erb within layouts/application (Duration: 117.2ms | Allocations: 2053)
+  Rendered layouts/_navbar.html.erb (Duration: 33.1ms | Allocations: 633)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 16)
+  Rendered layout layouts/application.html.erb (Duration: 1225.5ms | Allocations: 19480)
+Completed 200 OK in 1977ms (Views: 1229.7ms | ActiveRecord: 152.9ms | Allocations: 24950)
+
+
+Started GET "/visitor_tables" for ::1 at 2022-05-08 10:28:11 +0530
+Processing by VisitorTablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering visitor_tables/index.html.erb within layouts/application
+  [1m[36mVisitorTable Load (36.3ms)[0m  [1m[34mSELECT "visitor_tables".* FROM "visitor_tables"[0m
+  ↳ app/views/visitor_tables/index.html.erb:6
+  Rendered visitor_tables/_visitor_table.html.erb (Duration: 20.8ms | Allocations: 378)
+  Rendered visitor_tables/index.html.erb within layouts/application (Duration: 254.0ms | Allocations: 1974)
+  Rendered layouts/_navbar.html.erb (Duration: 3.7ms | Allocations: 596)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 337.5ms | Allocations: 8077)
+Completed 200 OK in 342ms (Views: 302.5ms | ActiveRecord: 36.3ms | Allocations: 8465)
+
+
+Started GET "/visitor_tables/1" for ::1 at 2022-05-08 10:28:16 +0530
+Processing by VisitorTablesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVisitorTable Load (1.0ms)[0m  [1m[34mSELECT "visitor_tables".* FROM "visitor_tables" WHERE "visitor_tables"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/visitor_tables_controller.rb:65:in `set_visitor_table'
+  Rendering layout layouts/application.html.erb
+  Rendering visitor_tables/show.html.erb within layouts/application
+  Rendered visitor_tables/_visitor_table.html.erb (Duration: 0.3ms | Allocations: 71)
+  Rendered visitor_tables/show.html.erb within layouts/application (Duration: 49.5ms | Allocations: 847)
+  Rendered layouts/_navbar.html.erb (Duration: 24.7ms | Allocations: 597)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 450.7ms | Allocations: 7019)
+Completed 200 OK in 781ms (Views: 452.0ms | ActiveRecord: 1.5ms | Allocations: 9862)
+
+
+Started DELETE "/visitor_tables/1" for ::1 at 2022-05-08 10:28:20 +0530
+Processing by VisitorTablesController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mVisitorTable Load (0.7ms)[0m  [1m[34mSELECT "visitor_tables".* FROM "visitor_tables" WHERE "visitor_tables"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/visitor_tables_controller.rb:65:in `set_visitor_table'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/visitor_tables_controller.rb:54:in `destroy'
+  [1m[36mVisitorTable Destroy (0.8ms)[0m  [1m[31mDELETE FROM "visitor_tables" WHERE "visitor_tables"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/visitor_tables_controller.rb:54:in `destroy'
+  [1m[36mTRANSACTION (19.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/visitor_tables_controller.rb:54:in `destroy'
+Redirected to http://localhost:3000/visitor_tables
+Completed 302 Found in 87ms (ActiveRecord: 21.3ms | Allocations: 2736)
+
+
+Started GET "/visitor_tables" for ::1 at 2022-05-08 10:28:20 +0530
+Processing by VisitorTablesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering visitor_tables/index.html.erb within layouts/application
+  [1m[36mVisitorTable Load (0.6ms)[0m  [1m[34mSELECT "visitor_tables".* FROM "visitor_tables"[0m
+  ↳ app/views/visitor_tables/index.html.erb:6
+  Rendered visitor_tables/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 831)
+  Rendered layouts/_navbar.html.erb (Duration: 3.6ms | Allocations: 570)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 49.9ms | Allocations: 6834)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.6ms | Allocations: 7167)
+
+
+Started GET "/visitor_tables/new" for ::1 at 2022-05-08 10:28:23 +0530
+Processing by VisitorTablesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering visitor_tables/new.html.erb within layouts/application
+  Rendered visitor_tables/_form.html.erb (Duration: 17.7ms | Allocations: 1683)
+  Rendered visitor_tables/new.html.erb within layouts/application (Duration: 18.7ms | Allocations: 1782)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 569)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 51.1ms | Allocations: 7743)
+Completed 200 OK in 54ms (Views: 52.2ms | ActiveRecord: 0.0ms | Allocations: 8043)
+
+
+Started POST "/visitor_tables" for ::1 at 2022-05-08 10:28:51 +0530
+Processing by VisitorTablesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "visitor_table"=>{"name"=>"karthiga", "relation"=>"friend", "classification"=>"stranger", "no_of_visits"=>"1", "last_visited"=>"2022-05-08T10:28", "notes"=>"abcd"}, "commit"=>"Create Visitor table"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/visitor_tables_controller.rb:27:in `block in create'
+  [1m[36mVisitorTable Create (0.9ms)[0m  [1m[32mINSERT INTO "visitor_tables" ("name", "relation", "classification", "no_of_visits", "last_visited", "notes", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "karthiga"], ["relation", "friend"], ["classification", "stranger"], ["no_of_visits", 1], ["last_visited", "2022-05-08 10:28:00"], ["notes", "abcd"], ["created_at", "2022-05-08 04:58:51.913111"], ["updated_at", "2022-05-08 04:58:51.913111"]]
+  ↳ app/controllers/visitor_tables_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (144.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/visitor_tables_controller.rb:27:in `block in create'
+UserMailer#visitor_information: processed outbound mail in 4.6ms
+Completed 500 Internal Server Error in 427ms (ActiveRecord: 145.5ms | Allocations: 13846)
+
+
+  
+NoMethodError (undefined method `email' for nil:NilClass
+
+    mail to: @user.email, subject: "Visitor information"
+                  ^^^^^^):
+  
+app/mailers/user_mailer.rb:10:in `visitor_information'
+app/controllers/visitor_tables_controller.rb:29:in `block in create'
+app/controllers/visitor_tables_controller.rb:26:in `create'
+Started GET "/visitor_tables/new" for ::1 at 2022-05-08 10:29:42 +0530
+Processing by VisitorTablesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering visitor_tables/new.html.erb within layouts/application
+  Rendered visitor_tables/_form.html.erb (Duration: 15.9ms | Allocations: 1927)
+  Rendered visitor_tables/new.html.erb within layouts/application (Duration: 19.1ms | Allocations: 2049)
+  Rendered layouts/_navbar.html.erb (Duration: 6.0ms | Allocations: 633)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 16)
+  Rendered layout layouts/application.html.erb (Duration: 113.9ms | Allocations: 19471)
+Completed 200 OK in 179ms (Views: 118.2ms | ActiveRecord: 29.0ms | Allocations: 22970)
+
+
+Started POST "/visitor_tables" for ::1 at 2022-05-08 10:30:12 +0530
+Processing by VisitorTablesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "visitor_table"=>{"name"=>"hem", "relation"=>"friend", "classification"=>"guest", "no_of_visits"=>"1", "last_visited"=>"2022-05-08T10:30", "notes"=>"dgfghj"}, "commit"=>"Create Visitor table"}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/visitor_tables_controller.rb:27:in `block in create'
+  [1m[36mVisitorTable Create (1.9ms)[0m  [1m[32mINSERT INTO "visitor_tables" ("name", "relation", "classification", "no_of_visits", "last_visited", "notes", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "hem"], ["relation", "friend"], ["classification", "guest"], ["no_of_visits", 1], ["last_visited", "2022-05-08 10:30:00"], ["notes", "dgfghj"], ["created_at", "2022-05-08 05:00:12.045012"], ["updated_at", "2022-05-08 05:00:12.045012"]]
+  ↳ app/controllers/visitor_tables_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (55.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/visitor_tables_controller.rb:27:in `block in create'
+UserMailer#visitor_information: processed outbound mail in 7.5ms
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 58.6ms | Allocations: 7434)
+
+
+  
+NameError (undefined local variable or method `users' for #<UserMailer:0x00000000018470>
+
+    mail to: users.email, subject: "Visitor information"
+             ^^^^^):
+  
+app/mailers/user_mailer.rb:10:in `visitor_information'
+app/controllers/visitor_tables_controller.rb:29:in `block in create'
+app/controllers/visitor_tables_controller.rb:26:in `create'
+  [1m[36mUser Load (94.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/" for ::1 at 2022-05-08 10:32:19 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 418)
+  Rendered layouts/_navbar.html.erb (Duration: 93.2ms | Allocations: 1132)
+  Rendered layouts/_footer.html.erb (Duration: 37.3ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 1101.4ms | Allocations: 46295)
+Completed 200 OK in 1164ms (Views: 1121.4ms | ActiveRecord: 0.0ms | Allocations: 49569)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-05-08 10:37:13 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 17.1ms | Allocations: 711)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 145.1ms | Allocations: 4602)
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 588)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 16)
+  Rendered layout layouts/application.html.erb (Duration: 172.7ms | Allocations: 10772)
+Completed 200 OK in 238ms (Views: 175.7ms | ActiveRecord: 7.7ms | Allocations: 17567)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-05-08 10:37:39 +0530
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"maheshmadesh141@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "maheshmadesh141@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 135ms (ActiveRecord: 5.0ms | Allocations: 3610)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-05-08 10:37:50 +0530
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"maheshmadesh141@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "maheshmadesh141@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 14ms (ActiveRecord: 1.3ms | Allocations: 1602)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-05-08 10:38:17 +0530
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"maheshmadesh141@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "maheshmadesh141@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 13ms (ActiveRecord: 1.1ms | Allocations: 1451)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-05-08 10:38:26 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 32.0ms | Allocations: 231)
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 147)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 70.0ms | Allocations: 2105)
+  Rendered layouts/_navbar.html.erb (Duration: 2.7ms | Allocations: 591)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 16)
+  Rendered layout layouts/application.html.erb (Duration: 98.1ms | Allocations: 8385)
+Completed 200 OK in 104ms (Views: 101.2ms | ActiveRecord: 0.0ms | Allocations: 9664)
+
+
+Started POST "/users" for ::1 at 2022-05-08 10:38:42 +0530
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"maheshmadesh141@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "maheshmadesh141@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 2.6ms | Allocations: 624)
+  Rendered devise/shared/_links.html.erb (Duration: 4.2ms | Allocations: 77)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 17.4ms | Allocations: 2240)
+  Rendered layouts/_navbar.html.erb (Duration: 3.3ms | Allocations: 598)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 63.7ms | Allocations: 8428)
+Completed 200 OK in 809ms (Views: 68.8ms | ActiveRecord: 2.7ms | Allocations: 15254)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-05-08 10:38:51 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.2ms | Allocations: 120)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 971)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 545)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 44.0ms | Allocations: 6900)
+Completed 200 OK in 49ms (Views: 46.7ms | ActiveRecord: 0.0ms | Allocations: 7562)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-05-08 10:38:58 +0530
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"maheshmadesh141@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "maheshmadesh141@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.6ms | Allocations: 1594)
+
+
+Started GET "/visitor_tables" for ::1 at 2022-05-08 10:42:23 +0530
+Processing by VisitorTablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering visitor_tables/index.html.erb within layouts/application
+  [1m[36mVisitorTable Load (29.9ms)[0m  [1m[34mSELECT "visitor_tables".* FROM "visitor_tables"[0m
+  ↳ app/views/visitor_tables/index.html.erb:6
+  Rendered visitor_tables/_visitor_table.html.erb (Duration: 16.0ms | Allocations: 453)
+  Rendered visitor_tables/_visitor_table.html.erb (Duration: 0.3ms | Allocations: 41)
+  Rendered visitor_tables/index.html.erb within layouts/application (Duration: 457.8ms | Allocations: 6324)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 616)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 16)
+  Rendered layout layouts/application.html.erb (Duration: 558.6ms | Allocations: 12549)
+Completed 200 OK in 580ms (Views: 465.4ms | ActiveRecord: 96.4ms | Allocations: 13908)
+
+
+Started GET "/visitor_tables/2" for ::1 at 2022-05-08 10:42:28 +0530
+Processing by VisitorTablesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mVisitorTable Load (0.5ms)[0m  [1m[34mSELECT "visitor_tables".* FROM "visitor_tables" WHERE "visitor_tables"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/visitor_tables_controller.rb:65:in `set_visitor_table'
+  Rendering layout layouts/application.html.erb
+  Rendering visitor_tables/show.html.erb within layouts/application
+  Rendered visitor_tables/_visitor_table.html.erb (Duration: 0.3ms | Allocations: 42)
+  Rendered visitor_tables/show.html.erb within layouts/application (Duration: 22.7ms | Allocations: 736)
+  Rendered layouts/_navbar.html.erb (Duration: 2.5ms | Allocations: 569)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 40.6ms | Allocations: 6679)
+Completed 200 OK in 48ms (Views: 41.8ms | ActiveRecord: 0.5ms | Allocations: 8385)
+
+
+Started DELETE "/visitor_tables/2" for ::1 at 2022-05-08 10:42:30 +0530
+Processing by VisitorTablesController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+  [1m[36mVisitorTable Load (0.6ms)[0m  [1m[34mSELECT "visitor_tables".* FROM "visitor_tables" WHERE "visitor_tables"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/visitor_tables_controller.rb:65:in `set_visitor_table'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/visitor_tables_controller.rb:54:in `destroy'
+  [1m[36mVisitorTable Destroy (17.7ms)[0m  [1m[31mDELETE FROM "visitor_tables" WHERE "visitor_tables"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/visitor_tables_controller.rb:54:in `destroy'
+  [1m[36mTRANSACTION (34.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/visitor_tables_controller.rb:54:in `destroy'
+Redirected to http://localhost:3000/visitor_tables
+Completed 302 Found in 246ms (ActiveRecord: 53.6ms | Allocations: 2730)
+
+
+Started GET "/visitor_tables" for ::1 at 2022-05-08 10:42:30 +0530
+Processing by VisitorTablesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering visitor_tables/index.html.erb within layouts/application
+  [1m[36mVisitorTable Load (0.6ms)[0m  [1m[34mSELECT "visitor_tables".* FROM "visitor_tables"[0m
+  ↳ app/views/visitor_tables/index.html.erb:6
+  Rendered visitor_tables/_visitor_table.html.erb (Duration: 0.3ms | Allocations: 42)
+  Rendered visitor_tables/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1031)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 569)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 6984)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.6ms | Allocations: 7319)
+
+
+Started GET "/visitor_tables/3" for ::1 at 2022-05-08 10:42:34 +0530
+Processing by VisitorTablesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mVisitorTable Load (0.7ms)[0m  [1m[34mSELECT "visitor_tables".* FROM "visitor_tables" WHERE "visitor_tables"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/visitor_tables_controller.rb:65:in `set_visitor_table'
+  Rendering layout layouts/application.html.erb
+  Rendering visitor_tables/show.html.erb within layouts/application
+  Rendered visitor_tables/_visitor_table.html.erb (Duration: 0.6ms | Allocations: 42)
+  Rendered visitor_tables/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 471)
+  Rendered layouts/_navbar.html.erb (Duration: 2.8ms | Allocations: 569)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 32.0ms | Allocations: 6413)
+Completed 200 OK in 39ms (Views: 33.2ms | ActiveRecord: 0.7ms | Allocations: 7225)
+
+
+Started DELETE "/visitor_tables/3" for ::1 at 2022-05-08 10:42:35 +0530
+Processing by VisitorTablesController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"3"}
+  [1m[36mVisitorTable Load (0.6ms)[0m  [1m[34mSELECT "visitor_tables".* FROM "visitor_tables" WHERE "visitor_tables"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/visitor_tables_controller.rb:65:in `set_visitor_table'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/visitor_tables_controller.rb:54:in `destroy'
+  [1m[36mVisitorTable Destroy (1.0ms)[0m  [1m[31mDELETE FROM "visitor_tables" WHERE "visitor_tables"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/visitor_tables_controller.rb:54:in `destroy'
+  [1m[36mTRANSACTION (20.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/visitor_tables_controller.rb:54:in `destroy'
+Redirected to http://localhost:3000/visitor_tables
+Completed 302 Found in 39ms (ActiveRecord: 22.4ms | Allocations: 2447)
+
+
+Started GET "/visitor_tables" for ::1 at 2022-05-08 10:42:35 +0530
+Processing by VisitorTablesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering visitor_tables/index.html.erb within layouts/application
+  [1m[36mVisitorTable Load (0.9ms)[0m  [1m[34mSELECT "visitor_tables".* FROM "visitor_tables"[0m
+  ↳ app/views/visitor_tables/index.html.erb:6
+  Rendered visitor_tables/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 821)
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 573)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 196.5ms | Allocations: 6847)
+Completed 200 OK in 198ms (Views: 196.4ms | ActiveRecord: 0.9ms | Allocations: 7136)
+
+
