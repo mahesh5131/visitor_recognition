@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "/check_visitor", to: 'visitors#check_visitor', as: 'check_visitor'
   resources :visitors
   devise_for :users
   devise_scope :user do  
