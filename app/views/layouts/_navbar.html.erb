@@ -1,8 +1,21 @@
-<nav class="navbar navbar-expand-sm bg-light navbar-light">
+<nav class="navbar navbar-expand-sm  navbar-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
-      <%= image_tag "logo.png", height:"99" ,width:"99" %>
+      <%= image_tag "logo.png", height:"105" ,width:"105" %>
     </a>
+    <ul class="nav justify-content-center">
+          <li class="nav-item">
+             <%= link_to 'About us', edit_user_registration_path, :class => 'navbar-link' %>
+          </li>
+  
+          <li class="nav-item">
+            <%= link_to 'Blog', edit_user_registration_path, :class => 'navbar-link' %>
+           </li>
+ 
+          <li class="nav-item">
+            <%= link_to 'Docs', edit_user_registration_path, :class => 'navbar-link' %>
+          </li>
+    </ul>
     <ul class="navbar-nav">
       <% if user_signed_in? %>
         <li class="nav-item">

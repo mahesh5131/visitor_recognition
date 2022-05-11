@@ -1,14 +1,19 @@
 @import "bootstrap";
 .navbar-link {
    font-size: 20px;
-   color:  #000000;
+   color: #FFFFFF;
    text-decoration: none;
-   padding: 10px;
+   padding: 20px;
+}
+
+.navbar{
+  background-color:  #001a1a;
 }
 
 .navbar-link:hover {
-  background-color:  #008B8B;
-  color: #000000;
+  background-color: #003333;
+  border-radius: 5px;
+  color:#FFFFFF
 }
 
 .btn {  
@@ -49,4 +54,45 @@
 }
 .field{
   padding: 5px;
+}
+
+.section1{
+  background-color:  #008080;
+  font-family: 'Lato', sans-serif;
+  padding: 20px;
+  
+}
+.use{
+  padding: 30px;
+  font-family: 'Lato', sans-serif;
+}
+.section3{
+  background-color:  #eef7f6;
+  font-family: 'Lato', sans-serif;
+  padding: 20px
+}
+.icon{
+  border-left: 1px solid black;
+}
+.diagram{
+  padding-top: 150px;
+  font-family: 'Lato', sans-serif;
+}
+.section2{
+  padding: 50px;
+  background-color: #a2c3c3;
+}
+
+.menu{
+  padding-top: 90px;
+  font-family: 'Lato', sans-serif;
+}
+.text{
+  color: white;
+  text-decoration: underline;
+}
+.text:hover{
+  background-color:#008080;
+  border-radius: 5px;
+  color:#FFFFFF
 }
