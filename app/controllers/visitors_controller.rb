@@ -34,6 +34,21 @@ class VisitorsController < ApplicationController
     end
   end
 
+  def check_visitor
+    folder_path = Rails.root.join("public/camera_images")
+    @files = Dir["#{folder_path}"+"/*"]
+    if @files.present?
+      @files.each do |file|
+        base_64_string = Base64.encode64(open(file) { |io| io.read })
+        visitor = Visitor.find_or_create_by(image_string: base_64_string)
+        classification = visitor.no_of_visit.nil? ? 'stranger' : visitor.classification
+        visitor.update(no_of_visit: visitor.no_of_visit.to_i + 1, last_visited: Time.now, classification: classification)
+        File.delete(file) if File.exist?(file)
+      end
+    end
+    redirect_to visitors_url
+  end
+
   # PATCH/PUT /visitors/1 or /visitors/1.json
   def update
     respond_to do |format|

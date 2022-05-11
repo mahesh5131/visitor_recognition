@@ -1,5 +1,7 @@
-<h1>User#visitor_information</h1>
-
+<h1>Visitor Information</h1>
 <p>
-  <%= @greeting %>, find me in app/views/user_mailer/visitor_information.html.erb
+  <%= @greeting %>
+  You have a new visitor in your Home. Please go and confirm who it is?
+  Click the link to verify your visitor.
+  <%= link_to "Show this visitor", @visitor %>
 </p>

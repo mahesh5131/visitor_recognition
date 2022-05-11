@@ -31,7 +31,7 @@
       <div class="card-body">
         <h5 class="card-title">STRANGERS</h5>
         <p class="card-text">
-        <%=@visitors.count{|visitor| visitor.classification == "stranger"}%>
+          <%=@visitors.count{|visitor| visitor.classification == "stranger"}%>
         </p>
         <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
       </div>
@@ -132,3 +132,18 @@
 </div>
 <%= link_to "New visitor", new_visitor_path %>
 -->
+<script type="text/javascript">
+  function fetchdata(){
+    $.ajax({
+      url: '/check_visitor',
+      type: 'get',
+      success: function(response){
+        window.location.reload();
+      }
+    });
+  }
+
+  $(document).ready(function(){
+    setInterval(fetchdata, 10000);
+  });
+</script>
