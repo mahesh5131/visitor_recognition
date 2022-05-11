@@ -23,7 +23,7 @@
 
   <div>
     <%= form.label :classification, style: "display: block" %>
-    <%= form.text_field :classification %>
+    <%= form.select :classification, ['guest','stranger'],{prompt:'Select'},{class: "form-control", width: '10%'}%>
   </div>
 
   <div>
