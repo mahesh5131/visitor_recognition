@@ -90,16 +90,38 @@
 .text{
   color: white;
   text-decoration: underline;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
 }
 .text:hover{
   background-color:#008080;
   border-radius: 5px;
-  color:#FFFFFF
+  color:#FFFFFF;
+}
+.text-f{
+  color: white;
+  text-decoration: underline;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+
+}
+.text-f:hover{
+  background-color:  #e6ffff;
+  border-radius: 5px;
+  color: #001a1a;
 }
 
-.login{
-  background: linear-gradient(to bottom right, #00cc99 0%, #006666 100%);
-  color: white;
-  margin-top:15px;
-  font-family: 'Lato', sans-serif;
+.inside-card{
+   margin-top:60px;
+   margin-bottom:70px;
+   font-family: 'Lato', sans-serif;
+   background-image: linear-gradient(to right,#00b3b3, #00b3b3 ,#008080, #006666, #004d4d);
+   opacity: 1;
  }
+.outside-card{
+  background-image: linear-gradient(to right,#00b3b3, #00b3b3 ,#008080, #006666, #004d4d);
+}
+
+.s1{
+  padding-top: 1px;
+}

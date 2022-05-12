@@ -1,40 +1,16 @@
-<footer class="text-center text-lg-start text-white container-fluid " style="background-color: #163734;">
-<div class="text-white ">
-  <div class="row">
-    <div class="col-6">
-         <div class="card text-white border-0"style="background-color: #163734">
-         <div class="card-body">
-         <%= image_tag "logo.png", height:"250" ,width:"250" %>
-            <div class="row">
-               <div class="col-6  col-sm-3">
-               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
-                  <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
-                  <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
-               </svg>
-               </div>
-               <div class="col-6  col-sm-3 ">
-               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
-                  <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                  <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
-                  <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
-               </svg>
-               </div>
-            </div>
-         </div>
-         </div>
-    </div>
-   
-  <div class=" menu col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 fs-5">
-    <p><%= link_to 'About us', edit_user_registration_path,:class =>"text" %></p>
-    <p><%= link_to 'Company', edit_user_registration_path,:class =>"text" %></p>
-    <p><%= link_to 'Blog', edit_user_registration_path,:class =>"text" %></p>
-    <p><%= link_to 'Docs', edit_user_registration_path,:class =>"text" %></p>
-  </div>
- </div>
- </div>
-</div>
-<div class="text-center p-3 fs-6">
-© 2020 Copyright:
-<a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-</div>
+<footer class="d-flex flex-wrap justify-content-between align-items-center" style="background-color: #163734; border:1px solid black;margin-top:0px;">
+ 
+  <p class="col-md-4 mb-0 text-muted text-white">© 2021 Company,<a class="text-white"<%= link_to 'Visitor Recognition'%></a></p>
+
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <%= image_tag "logo.png", height:"55" ,width:"55", :class => "bi me-2"%>
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><%= link_to 'About us', edit_user_registration_path,:class =>"text" %></li>
+      <li class="nav-item"><%= link_to 'Company', edit_user_registration_path,:class =>"text" %></li>
+      <li class="nav-item"><%= link_to 'Blog', edit_user_registration_path,:class =>"text" %></li>
+      <li class="nav-item"><%= link_to 'Docs', edit_user_registration_path,:class =>"text" %></li>
+    </ul>
+
 </footer>
