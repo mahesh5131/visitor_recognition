@@ -1,4 +1,4 @@
-<footer class="d-flex flex-wrap justify-content-between align-items-center" style="background-color: #163734; border:1px solid black;margin-top:0px;">
+<footer class="d-flex flex-wrap justify-content-between align-items-center mt-auto" style="background-color: #163734; border:1px solid black;margin-top:0px;">
  
   <p class="col-md-4 mb-0 text-muted text-white">© 2021 Company,<a class="text-white"<%= link_to 'Visitor Recognition'%></a></p>
 
@@ -7,10 +7,7 @@
     </a>
 
     <ul class="nav col-md-4 justify-content-end">
-      <li class="nav-item"><%= link_to 'About us', edit_user_registration_path,:class =>"text" %></li>
-      <li class="nav-item"><%= link_to 'Company', edit_user_registration_path,:class =>"text" %></li>
-      <li class="nav-item"><%= link_to 'Blog', edit_user_registration_path,:class =>"text" %></li>
-      <li class="nav-item"><%= link_to 'Docs', edit_user_registration_path,:class =>"text" %></li>
+      <li class="nav-item"><%= link_to 'About us', about_us_path, :class =>"text" %></li>
     </ul>
 
 </footer>
