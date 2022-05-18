@@ -1,9 +1,13 @@
 class VisitorsController < ApplicationController
   before_action :set_visitor, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
 
   # GET /visitors or /visitors.json
   def index
     @visitors = Visitor.all
+    time = Time.now
+    @today_visitors = @visitors.where(:last_visited => time.beginning_of_day..time.end_of_day)
+    @weekly_visitors = @visitors.where(:last_visited => (time - 7.days).beginning_of_day..time.end_of_day)
   end
 
   # GET /visitors/1 or /visitors/1.json

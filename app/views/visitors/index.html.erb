@@ -1,137 +1,65 @@
 <p style="color: green"><%= notice %></p>
-<% if user_signed_in?%>
-
-<!---DASHBOARD DESIGN -->
 <h3 class = "h3"> Dashboard </h3>
-<!-- Guest and Stranger -->
-
-<div class="row">
-<!-------------card1 for Guest ------------>
-  <div class="col-sm-3">
-
-    <div id ="g1"  class ="card text-center" class="card">
-
-      <div class="card-body">
-        <h5 class="card-title">GUEST</h5>
-        <p class="card-text">
-         <%=@visitors.count{|visitor| visitor.classification=="guest"}%>
-        </p>
-        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-      </div>
-
-    </div>
-
-  </div>
-  <!-----------Card 2 for Stranger---------------->
-
-  <div class="col-sm-3">
-
-    <div id = "g2"class = "card text-center" class="card">
-
-      <div class="card-body">
-        <h5 class="card-title">STRANGERS</h5>
-        <p class="card-text">
-          <%=@visitors.count{|visitor| visitor.classification == "stranger"}%>
-        </p>
-        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-----------card 3 ------->
-
-   <div class="col-sm-6" class="chart">
-         <%= pie_chart @visitors.group(:classification).count,donut: true, colors: ["#ff9999","#009999"]%>
-   </div>
-</div>
-
-
-<br>
-<br>
-
-<div class="row">
-
-   <div class="col-sm-6">
-     <div class="card">
-      <div class ="card-body">
-          <h4 class="h4">Daily visit</h4>
-            <table class="table table-bordered border-dark">
-              <thead>
-                <tr>
-                  <th scope="col">Name</th>
-                  <th scope="col">Image</th>
-                  <th scope="col">Date and Time</th>
-                </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>10/05/2022 10:00am</td>
-                  </tr>
-                  <tr>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>10/05/2022 10:00am</td>
-                  </tr>
-                  <tr>
-                    <td>Larry </td>
-                    <td>@twitter</td>
-                    <td>10/05/2022 10:00am</td>
-                  </tr>
-              </tbody>
-            </table>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class='card guest'>
+        <div class="card-body" style="height: 334px; padding-top: 25%;">
+          <h3 class="text-center">GUEST</h3>
+          <h4 class="text-center">
+            <%=@visitors.count{|visitor| visitor.classification=="guest"}%>    
+          </h4>
         </div>
-     </div>
-  </div>
-<br>
-<div class="col-sm-6">
-  <div class="card">
-    <div class ="card-body">
-      <h4 class="h4">Stranger to Guest</h4>
-      <table class="table table-bordered border-dark">
-         <thead>
-            <tr>
-              <th scope="col">Name</th>
-              <th scope="col">Image</th>
-            </tr>
-          </thead>
-        <tbody>
-            <tr>
-              <td>Mark</td>
-              <td>Otto</td>
-            </tr>
-            <tr>
-              <td>Jacob</td>
-              <td>Thornton</td>
-            </tr>
-            <tr>
-              <td>Larry </td>
-              <td>@twitter</td>
-            </tr>
-        </tbody>
-      </table>
       </div>
     </div>
+    <div class="col-sm-4">
+      <div class='card stranger'>
+        <div class="card-body" style="height: 334px; padding-top: 25%;">
+          <h3 class="text-center">STRANGERS</h3>
+          <h4 class="text-center"><%=@visitors.count{|visitor| visitor.classification == "stranger"}%></h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <%= pie_chart @visitors.group(:classification).count,donut: true, colors: ["#001a1a","#008A8A"]%>
+        </div>
+       </div>
+    </div>
   </div>
+  <br>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-sm-8">
+      <%= render 'table', records: @today_visitors, table_name: 'Today Visitors'%>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <%= column_chart @today_visitors.group(:classification).count,donut: true, colors: ["#001a1a","#008A8A"] %>
+        </div>
+       </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-sm-8">
+      <%= render 'table', records: @weekly_visitors, table_name: 'Visitors Within 7 days'%>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <%= column_chart @weekly_visitors.group(:classification).count,donut: true, colors: ["#001a1a","#008A8A"] %>
+        </div>
+       </div>
+    </div>
+  </div>
+
 </div>
-<% else %>
-    <%= render"home/index" %>
-<% end %>
-<!--
-<h1>Visitors</h1>
-<div id="visitors">
-  <% @visitors.each do |visitor| %>
-    <%= render visitor %>
-    <p>
-      <%= link_to "Show this visitor", visitor %>
-    </p>
-  <% end %>
-</div>
-<%= link_to "New visitor", new_visitor_path %>
--->
 <script type="text/javascript">
   function fetchdata(){
     $.ajax({

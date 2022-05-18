@@ -26,8 +26,8 @@ development:
   database: visitor_recognition_development
   host: localhost
   pool: 5
-  username: postgres
-  password: admin
+  username: farm
+  password: farm
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -64,8 +64,8 @@ test:
   database: visitor_recognition_test
   host: localhost
   pool: 5
-  username: postgres
-  password: admin
+  username: farm
+  password: farm
 
 
 # As with config/credentials.yml, you never want to store sensitive information,

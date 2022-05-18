@@ -27,14 +27,12 @@
 .row{
   padding-left: 10px;
 }
-#g1{
-  margin-top: 50px;
-  background-image: linear-gradient(#0042e4,#0068cc,#8fc0e9);
+.guest{
+  background-image: linear-gradient(#3b8e7c,#477f73,#3fa590);
   color: #FFFFFF;
 }
-#g2{
-  margin-top: 50px;
-  background-image: linear-gradient(#dd5106,#f27431,#ee9764);
+.stranger{
+  background-image: linear-gradient(#001a1a,#053333,#053838);
   color: #FFFFFF;
 }
 .h3{
