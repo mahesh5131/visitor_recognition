@@ -8,6 +8,7 @@
         <th scope="col">Visitor Type</th>
         <th scope="col">Visit Count</th>
         <th scope="col">Date and Time</th>
+        <th scope="col"> View</th>
       </tr>
     </thead>
     <tbody>
@@ -19,6 +20,7 @@
             <td><%= record.classification %></td>
             <td><%= record.no_of_visit %></td>
             <td><%= record.last_visited.strftime("%m/%d/%Y %I:%M%p")%></td>
+            <td><%= link_to "view", record %></td>
           </tr>
         <% end %>
       <% else %>
