@@ -10,6 +10,8 @@
       </ul>
     </div>
   <% end %>
+<div class="container">
+
 <div class = "row">
   <div class="col-3 edit-visitor">
     <div>
@@ -48,7 +50,7 @@
   </div>
   <div class="col-3 edit-visitor">
     <div>
-      <%= form.label :notes, style: "display: block" ,:class=>"fw-bold fs-5" %>
+      <%= form.label :notes, style: "display: block" ,:class=>"fw-bold fs-5"%>
       <%= form.text_area :notes %>
     </div>
   </div>
@@ -64,4 +66,6 @@
     <%= link_to "Back to visitors", visitors_path,:class=>"btn btn-outline-light"  %>
   </div>
 </div>
+</div>
+
 <% end %>
