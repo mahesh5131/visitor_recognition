@@ -1,30 +1,30 @@
 <div class="container-fluid">
 <div id="<%= dom_id visitor %>" class="image_show">
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-6 fs-4 lh-lg font-monospace">
       <p>
         <strong>Name:</strong>
-        <%= visitor.name %>
+        <span class="text-light"><%= visitor.name %></span>
       </p>
 
       <p>
         <strong>Relation:</strong>
-        <%= visitor.relation %>
+        <span class="text-light"><%= visitor.relation %></span>
       </p>
 
       <p>
         <strong>Classification:</strong>
-        <%= visitor.classification %>
+        <span class="text-light"><%= visitor.classification %></span>
       </p>
 
       <p>
         <strong>No of visit:</strong>
-        <%= visitor.no_of_visit %>
+        <span class="text-light"><%= visitor.no_of_visit %></span>
       </p>
 
       <p>
         <strong>Last visited:</strong>
-        <%= visitor.last_visited %>
+        <span class="text-light"><%= visitor.last_visited %></span>
       </p>
     </div>
     <div class="col-sm-6">
@@ -36,14 +36,20 @@
     </div>
   </div>
 </div>
-  <div class="row">
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4">
+<div class="row">
+    <div class="col-sm-4 fs-5 font-monospace">
       <p>
         <strong>Notes:</strong>
-        <%= visitor.notes %>
+        <span class="text-light"><%= visitor.notes %></span>
       </p>
    </div>
-   <div class="col-sm-4"></div>
-  </div>
+   <div class="col-sm-3">
+   </div>
+   <div class="col-sm-4">
+      <%= link_to "Edit this visitor", edit_visitor_path(@visitor), :class=>"btn btn-outline-light" %> |
+      <%= link_to "Visitors", visitors_path, :class=>"btn btn-outline-light" %>
+ 
+      <%#= button_to "Destroy this visitor", @visitor, method: :delete %>
+   </div>
+</div>
 </div>
