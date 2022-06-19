@@ -22,3 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+Create the .env file in root directory.
+add the 
+ACCESS_KEY_ID= Value
+SECRET_ACCESS_KEY= Value
