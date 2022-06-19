@@ -39,15 +39,33 @@ class VisitorsController < ApplicationController
   end
 
   def check_visitor
-    folder_path = Rails.root.join("public/camera_images")
-    @files = Dir["#{folder_path}"+"/*"]
-    if @files.present?
-      @files.each do |file|
-        base_64_string = Base64.encode64(open(file) { |io| io.read })
-        visitor = Visitor.find_or_create_by(image_string: base_64_string)
-        classification = visitor.no_of_visit.nil? ? 'stranger' : visitor.classification
-        visitor.update(no_of_visit: visitor.no_of_visit.to_i + 1, last_visited: Time.now, classification: classification)
-        File.delete(file) if File.exist?(file)
+    access_key_id = ENV['ACCESS_KEY_ID']
+    secret_access_key = ENV['SECRET_ACCESS_KEY']
+    s3 = Aws::S3::Client.new(access_key_id: access_key_id, secret_access_key: secret_access_key)
+    bucket = 'visitorsreco'
+    s3.list_objects(bucket: bucket).each do |response|
+      response.contents.each do |object|
+        photo  = object.key
+        client   = Aws::Rekognition::Client.new(region: 'ap-south-1', access_key_id: access_key_id, secret_access_key: secret_access_key)
+        attrs = {image: { s3_object: { bucket: bucket, name: photo},}, attributes: ['ALL']}
+        response = client.detect_faces attrs
+        low  = 0
+        high = 0
+        gender = nil
+        response.face_details.each do |face_detail|
+          low  = face_detail.age_range.low
+          high = face_detail.age_range.high
+          gender = face_detail.gender.value
+        end
+        File.open(Rails.root.join("public/camera_images")+"#{object.key}", 'wb') do |file|
+          reap = s3.get_object({ bucket:bucket, key: photo }, target: file)
+          base_64_string = Base64.encode64(open(file) { |io| io.read })
+          visitor = Visitor.find_or_create_by(image_string: base_64_string)
+          classification = visitor.no_of_visit.nil? ? 'stranger' : visitor.classification
+          visitor.update(no_of_visit: visitor.no_of_visit.to_i + 1, last_visited: Time.now, classification: classification, gender: gender)
+          File.delete(file) if File.exist?(file)
+          s3.delete_object({ bucket:bucket, key: photo })
+        end
       end
     end
     redirect_to visitors_url
